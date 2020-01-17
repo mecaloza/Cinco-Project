@@ -429,3 +429,4 @@
 [0116/203517.946:ERROR:exception_snapshot_win.cc(98)] thread ID 6368 not found in process
 [0116/203517.945:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
 [0116/203517.946:ERROR:exception_snapshot_win.cc(98)] thread ID 10096 not found in process
+[0117/172838.016:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0

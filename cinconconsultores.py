@@ -10,7 +10,7 @@ import time
 import openpyxl
 from webscraping import asignar_nro_proceso, get_the_web
 from get_cities import get_cities_entities_web, make_cities_entities_dictionary
- 
+import os
 
 
 DB = openpyxl.load_workbook('Database-Process.xlsx')
@@ -49,7 +49,7 @@ class MyFrame(wx.Frame):
         button.Bind(wx.EVT_BUTTON, self.Ingresarproceso)
         
         button2 = wx.Button(self.panel, id=wx.ID_ANY, label="Consultar Proceso" ,pos=(900, 150), size=(200, 50))
-        button2.Bind(wx.EVT_BUTTON, self.onButton2)
+        button2.Bind(wx.EVT_BUTTON, self.BtnConsultaProceso)
         
         button3 = wx.Button(self.panel, id=wx.ID_ANY, label="Actualizar información proceso" ,pos=(900, 200), size=(200, 50))
         button3.Bind(wx.EVT_BUTTON, self.onButton3)
@@ -59,48 +59,36 @@ class MyFrame(wx.Frame):
         
         ico = wx.Icon('Icono.ico', wx.BITMAP_TYPE_ICO)
         self.SetIcon(ico)
-        
- 
-      
-    
-
-        
 
  
     #-------------Button Functions-----------------#
     def Ingresarproceso(self, event):
-        
         secondWindow = window2(parent=self.panel)
         secondWindow.Show()
-    
-    def onButton(self, event):
-        print ("Button pressed!")
-        
-    def onButton2(self, event): 
-        print ("Button pressed!")
+
+    def BtnConsultaProceso(self, event): 
+        consultawindow=ww_Consultar_Proceso(parent=self.panel)
+        consultawindow.Show()
+
         
     def onButton3(self, event):
         print ("Button pressed!")
         
     def onBtn_asignar_procesos(self, event):
-        print('asignar procesos')
         asignar_nro_proceso()
         
     #-------------Button Functions-----------------#    
 
         
 class window2(wx.Frame):
-    Ciudad=''
+    
     ciudades_entidades=make_cities_entities_dictionary()
     title = "Ingresar Proceso"
     
-    
-
     def __init__(self,parent):
         ciudades_entidades=make_cities_entities_dictionary()
-        wx.Frame.__init__(self,parent, -1,'Window2', size=(1200,700))
-        
-        
+        wx.Frame.__init__(self,parent, -1,'Ingresar Proceso', size=(1200,700))   
+
         try:
             
             image_file = 'CINCO CONSULTORES.jpg'
@@ -127,13 +115,10 @@ class window2(wx.Frame):
         #self.Ciudad = wx.TextCtrl(self.panel, size=(100, -1),pos=(700, 45))
         self.Ciudad.Bind(wx.EVT_COMBOBOX, self.get_entidades)
     
-        
-
         self.lblname10 = wx.StaticText(self.panel, label="Entidad:", pos=(600, 100))
         self.lblname10.SetBackgroundColour("white")
         self.Entidades=wx.ComboBox(self.panel, choices=ciudades_entidades[0]['MEDELLIN '], pos=(700,95),size=(100, -1))      
-        
-        
+
         self.lblname2 = wx.StaticText(self.panel, label="Jurisdicción:",pos=(600, 150))
         self.lblname2.SetBackgroundColour("white")
         self.Jurisdi = wx.TextCtrl(self.panel, size=(100, -1),pos=(700, 145))
@@ -176,7 +161,6 @@ class window2(wx.Frame):
         button = wx.Button(self.panel, id=wx.ID_ANY, label="Cancelar" ,pos=(900, 550), size=(200, 100))
         button.Bind(wx.EVT_BUTTON, self.OnCloseWindow)
         
-
         self.SetBackgroundColour(wx.Colour(100,100,100))
         self.Centre()
         self.Show()
@@ -184,7 +168,8 @@ class window2(wx.Frame):
     def OnCloseWindow(self, event):
         self.Destroy()
 
-    def get_entidades(self,event):
+    def get_entidades(self):
+        global Ciudad
         Ciudad = self.Ciudad.GetValue()
         return Ciudad
         
@@ -235,6 +220,46 @@ class window2(wx.Frame):
 #        filepath = "C:\Users\user\.spyder-py3\" 
 
         DB.save('Database-Process.xlsx')
+
+class ww_Consultar_Proceso(wx.Frame):
+    
+
+    def __init__(self,parent):
+        wx.Frame.__init__(self,parent, -1,'Consultar Proceso', size=(1200,700))   
+
+        try:
+            
+            image_file = 'CINCO CONSULTORES.jpg'
+            bmp1 = wx.Image(
+                image_file, 
+                wx.BITMAP_TYPE_ANY).ConvertToBitmap()
+            
+            self.panel = wx.StaticBitmap(
+                self, -1, bmp1, (0, 0))
+           
+       
+          
+        except IOError:
+            print ("Image file %s not found"  )
+            raise SystemExit
+        
+        
+        ico = wx.Icon('Icono.ico', wx.BITMAP_TYPE_ICO)
+        self.SetIcon(ico)
+        
+        self.lblname1 = wx.StaticText(self.panel, label="Ingrese Numero de Proceso", pos=(830, 250))
+        self.lblname1.SetBackgroundColour("white")
+        self.numero_consulta=wx.TextCtrl(self.panel, size=(300, -1),pos=(750, 270))
+
+        btn_consultar = wx.Button(self.panel, id=wx.ID_ANY, label="Consultar" ,pos=(840, 300), size=(100, 30))
+        btn_consultar.Bind(wx.EVT_BUTTON, self.Consultar_Excel)
+        
+    def Consultar_Excel(self,event):
+        
+        numero_consulta=self.numero_consulta.GetValue()
+        print(os.getcwd())
+        workbook_path=os.getcwd()+'/Procesos/'+ numero_consulta + '.xlsx'
+        os.startfile(workbook_path)
         
 class MyApp(wx.App):
     

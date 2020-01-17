@@ -141,11 +141,12 @@ def asignar_nro_proceso ():
             #assign the number process in the excel file
             if fecha_radicacion in lista_fechas_radicacion:
                 if lista_fechas_radicacion.count(fecha_radicacion) >1:
-                    print('Hay mas de un proceso con la misma fecha')
+                    print('Hay mas de un proceso con la misma fecha, numero no asignado')
                 else:
                     db_sheet.cell(row=Nproce,column=12).value= lista_numeros_procesos[lista_fechas_radicacion.index(fecha_radicacion)]
-                    wb_database.save('Database-ProcessP.xlsx')
-                    print('agregado exitoso')
+                    wb_database.save('Database-Process.xlsx')
+                    print('Numero de Proceso Asignado -  OK')
+                    create_excel_file (lista_numeros_procesos[lista_fechas_radicacion.index(fecha_radicacion)])
             else:
                 print('Numero de Proceso no asignado')
     print('DONE')
@@ -156,13 +157,42 @@ def asignar_nro_proceso ():
 
 #time.sleep(2)
 
-def create_excel_file (process_number):
+def create_excel_file (process_number_given):
     
     browser=get_the_web()
     
-    #Collect data from specific number process
-    inputElement8=browser.find_element_by_id("gvResultadosNum_lnkActuacionesnNum_0")
-    inputElement8.click()
+    wb_database=openpyxl.load_workbook('Database-Process.xlsx')
+    db_sheet=wb_database['Hoja1']
+    number_process_column=db_sheet['L']
+    process_numbers=[]
+    
+    for cell in number_process_column:
+        process_numbers.append(cell.value)
+    
+    fila_proceso=(process_numbers.index(process_number_given)+1)
+
+
+    
+    inputElement2 = browser.find_element_by_id("ddlCiudad")
+    inputElement2.send_keys(db_sheet.cell(row=fila_proceso,column=2).value)
+    time.sleep(1)
+    
+    dropdown1 = browser.find_element_by_id("ddlEntidadEspecialidad")
+    dropdown1.send_keys(db_sheet.cell(row=fila_proceso,column=3).value)
+    time.sleep(1)
+    
+    
+    
+    inputRadicado = browser.find_element_by_id('divNumRadicacion').find_element_by_tag_name('input')
+    inputRadicado.send_keys(process_number_given)
+    
+    inputElement7=browser.find_element_by_id("sliderBehaviorNumeroProceso_railElement")
+    inputElement7.click()
+    
+    btnconsulta=browser.find_element_by_xpath('/html/body/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr/td/div[3]/table/tbody/tr[4]/td/div[1]/table/tbody/tr[3]/td/input[1]')
+    btnconsulta.click()
+    
+    time.sleep(5)
     
     despacho=browser.find_element_by_id('lblJuzgadoActual').text
     ponente=browser.find_element_by_id('lblPonente').text
@@ -173,8 +203,12 @@ def create_excel_file (process_number):
     demandantes=browser.find_element_by_id('lblNomDemandante').text
     demandados=browser.find_element_by_id('lblNomDemandado').text
     contenido=browser.find_element_by_id('lblContenido').text
-    nombre_documento=browser.find_element_by_id('rptDocumentos_lbNombreDoc_0').text
-    descripcion=browser.find_element_by_id('rptDocumentos_lblDescDoc_0').text
+    
+    try:
+        nombre_documento=browser.find_element_by_id('rptDocumentos_lbNombreDoc_0').text
+        descripcion=browser.find_element_by_id('rptDocumentos_lblDescDoc_0').text
+    except NoSuchElementException:
+        print('No hay documentos Asociados')
 
 
     tabla_detalle=browser.find_element_by_class_name('ActuacionesDetalle')
@@ -242,10 +276,14 @@ def create_excel_file (process_number):
     main_sheet['C14'].value=demandantes
     main_sheet['Z14'].value=demandados
     main_sheet['C19'].value=contenido
-    main_sheet['C26'].value=nombre_documento
-    main_sheet['Z26'].value=descripcion
     
+    try:
+        main_sheet['C26'].value=nombre_documento
+        main_sheet['Z26'].value=descripcion
+    except UnboundLocalError:
+        print('No hay documentos Asociados')
     #Define the cell to copy the style
+    
     style_source='C32'
     
     for i in range (len(lista_fecha_actuaciones)):
@@ -272,11 +310,10 @@ def create_excel_file (process_number):
         main_sheet.cell(row=(empty_row+i), column=45)._style=deepcopy(main_sheet[style_source]._style)
         main_sheet.merge_cells(start_row=empty_row+i, start_column=45, end_row=empty_row+i, end_column=45+3)
 
-
-    new_path="./Procesos/" + process_number + '.xlsx'
+    browser.quit()
+    new_path="./Procesos/" + process_number_given + '.xlsx'
     wb.save(new_path)
  
     
-    print('done')
-
+    print('Excel creado exitosamente, Cesar Crack')
 
