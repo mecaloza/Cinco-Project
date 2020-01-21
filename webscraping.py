@@ -73,11 +73,8 @@ def asignar_nro_proceso ():
             try:
                 WebDriverWait(browser, timeout).until(EC.visibility_of_element_located((By.ID, "ddlEntidadEspecialidad")))
                 
-                dropdown1 = browser.find_element_by_id("ddlEntidadEspecialidad")
-                dropdown1.send_keys(db_sheet.cell(row=Nproce,column=3).value)
-                
-                #dropdown1= Select(browser.find_element_by_id('ddlEntidadEspecialidad'))
-                #dropdown1.select_by_value(db_sheet.cell(row=Nproce,column=3).value)
+                dropdown1= Select(browser.find_element_by_id('ddlEntidadEspecialidad'))
+                dropdown1.select_by_visible_text(db_sheet.cell(row=Nproce,column=3).value)
                 
             except TimeoutException:
                 print("No se encontro opcion Ciudad")
