@@ -1,0 +1,778 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "description": "BAIC",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/1"
+    },
+    {
+      "id": 2,
+      "description": "BRILLIANCE",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/2"
+    },
+    {
+      "id": 3,
+      "description": "BYD",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/3"
+    },
+    {
+      "id": 4,
+      "description": "CHANA",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/4"
+    },
+    {
+      "id": 5,
+      "description": "CHANGAN",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/5"
+    },
+    {
+      "id": 6,
+      "description": "CHERY",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/6"
+    },
+    {
+      "id": 7,
+      "description": "CHEVROLET",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/7"
+    },
+    {
+      "id": 8,
+      "description": "CHRYSLER",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/8"
+    },
+    {
+      "id": 9,
+      "description": "CITROEN",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/9"
+    },
+    {
+      "id": 10,
+      "description": "DAEWOO",
+      "image": null,
+      "created_at": "2021-03-31T14:56:38.000000Z",
+      "updated_at": "2021-03-31T14:56:38.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/10"
+    },
+    {
+      "id": 11,
+      "description": "DAIHATSU",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/11"
+    },
+    {
+      "id": 12,
+      "description": "DODGE",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/12"
+    },
+    {
+      "id": 13,
+      "description": "DS",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/13"
+    },
+    {
+      "id": 14,
+      "description": "FIAT",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/14"
+    },
+    {
+      "id": 15,
+      "description": "FORD",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/15"
+    },
+    {
+      "id": 16,
+      "description": "GEELY",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/16"
+    },
+    {
+      "id": 17,
+      "description": "GREAT WALL",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/17"
+    },
+    {
+      "id": 18,
+      "description": "HAFEI",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/18"
+    },
+    {
+      "id": 19,
+      "description": "HONDA",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/19"
+    },
+    {
+      "id": 20,
+      "description": "HYUNDAI",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/20"
+    },
+    {
+      "id": 21,
+      "description": "JAC",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/21"
+    },
+    {
+      "id": 22,
+      "description": "JEEP",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/22"
+    },
+    {
+      "id": 23,
+      "description": "KIA",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/23"
+    },
+    {
+      "id": 24,
+      "description": "MAZDA",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/24"
+    },
+    {
+      "id": 25,
+      "description": "MG",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/25"
+    },
+    {
+      "id": 26,
+      "description": "NISSAN",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/26"
+    },
+    {
+      "id": 27,
+      "description": "MITSUBISHI",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/27"
+    },
+    {
+      "id": 28,
+      "description": "PEUGEOT",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/28"
+    },
+    {
+      "id": 29,
+      "description": "RENAULT",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/29"
+    },
+    {
+      "id": 30,
+      "description": "SUBARU",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/30"
+    },
+    {
+      "id": 31,
+      "description": "SEAT",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/31"
+    },
+    {
+      "id": 32,
+      "description": "SKODA",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/32"
+    },
+    {
+      "id": 33,
+      "description": "SSANGYONG",
+      "image": null,
+      "created_at": "2021-03-31T14:56:39.000000Z",
+      "updated_at": "2021-03-31T14:56:39.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/33"
+    },
+    {
+      "id": 34,
+      "description": "SUZUKI",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/34"
+    },
+    {
+      "id": 35,
+      "description": "TOYOTA",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/35"
+    },
+    {
+      "id": 36,
+      "description": "VOLKSWAGEN",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/36"
+    },
+    {
+      "id": 37,
+      "description": "ZHONG XING",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/37"
+    },
+    {
+      "id": 38,
+      "description": "ZOTYE",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/38"
+    },
+    {
+      "id": 39,
+      "description": "AUDI",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/39"
+    },
+    {
+      "id": 40,
+      "description": "BMW",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/40"
+    },
+    {
+      "id": 42,
+      "description": "MERCEDES BENZ",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/42"
+    },
+    {
+      "id": 46,
+      "description": "MINI",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/46"
+    },
+    {
+      "id": 47,
+      "description": "LAND ROVER",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/47"
+    },
+    {
+      "id": 49,
+      "description": "VOLVO",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/49"
+    },
+    {
+      "id": 50,
+      "description": "HINO",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/50"
+    },
+    {
+      "id": 51,
+      "description": "JAGUAR",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/51"
+    },
+    {
+      "id": 52,
+      "description": "RAM",
+      "image": null,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/brands/52"
+    }
+  ],
+  "models": [
+    {
+      "id": 1,
+      "description": "X25 CONFORT 1,5",
+      "brand_id": 1,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/1"
+    },
+    {
+      "id": 2,
+      "description": "X35 ELITE 1,5",
+      "brand_id": 1,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/2"
+    },
+    {
+      "id": 3,
+      "description": "H220 1,5",
+      "brand_id": 2,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/3"
+    },
+    {
+      "id": 4,
+      "description": "H530 1,5 TURBO",
+      "brand_id": 2,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/4"
+    },
+    {
+      "id": 5,
+      "description": "V5 1,6",
+      "brand_id": 2,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/5"
+    },
+    {
+      "id": 6,
+      "description": "V5 SPORT 1,5 TURBO",
+      "brand_id": 2,
+      "created_at": "2021-03-31T14:56:40.000000Z",
+      "updated_at": "2021-03-31T14:56:40.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/6"
+    },
+    {
+      "id": 7,
+      "description": "V5 DELUXE 1,5 TURBO",
+      "brand_id": 2,
+      "created_at": "2021-03-31T14:56:41.000000Z",
+      "updated_at": "2021-03-31T14:56:41.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/7"
+    },
+    {
+      "id": 8,
+      "description": "F0 1.0",
+      "brand_id": 3,
+      "created_at": "2021-03-31T14:56:41.000000Z",
+      "updated_at": "2021-03-31T14:56:41.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/8"
+    },
+   
+  {
+      "id": 2603,
+      "description": "CAMRY",
+      "brand_id": 35,
+      "created_at": "2021-03-31T14:57:04.000000Z",
+      "updated_at": "2021-03-31T14:57:04.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/2603"
+    },
+    {
+      "id": 2608,
+      "description": "TERCEL",
+      "brand_id": 35,
+      "created_at": "2021-03-31T14:57:04.000000Z",
+      "updated_at": "2021-03-31T14:57:04.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/2608"
+    },
+    {
+      "id": 2624,
+      "description": "COROLLA",
+      "brand_id": 35,
+      "created_at": "2021-03-31T14:57:04.000000Z",
+      "updated_at": "2021-03-31T14:57:04.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/2624"
+    },
+    {
+      "id": 2626,
+      "description": "YARIS",
+      "brand_id": 35,
+      "created_at": "2021-03-31T14:57:04.000000Z",
+      "updated_at": "2021-03-31T14:57:04.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/models/2626"
+    }
+   
+  ],
+  "bodywork_types": [
+    {
+      "id": 1,
+      "description": "Sedan",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/1"
+    },
+    {
+      "id": 2,
+      "description": "SUV",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/2"
+    },
+    {
+      "id": 3,
+      "description": "Wagon",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/3"
+    },
+    {
+      "id": 4,
+      "description": "Coupe",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/4"
+    },
+    {
+      "id": 5,
+      "description": "Hatchback",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/5"
+    },
+    {
+      "id": 6,
+      "description": "Pickup",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/6"
+    },
+    {
+      "id": 7,
+      "description": "Compact",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/7"
+    },
+    {
+      "id": 8,
+      "description": "Sport Coupe",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/8"
+    },
+    {
+      "id": 9,
+      "description": "Van",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/9"
+    },
+    {
+      "id": 10,
+      "description": "Crossover",
+      "image": null,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/bodywork-types/10"
+    }
+  ],
+  "fuel_types": [
+    {
+      "id": 1,
+      "description": "Gasolina",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/1"
+    },
+    {
+      "id": 2,
+      "description": "Díesel",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/2"
+    },
+    {
+      "id": 3,
+      "description": "Gas",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/3"
+    },
+    {
+      "id": 4,
+      "description": "Natural",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/4"
+    },
+    {
+      "id": 5,
+      "description": "Eléctrico",
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/5"
+    },
+    {
+      "id": 6,
+      "description": "Híbrido",
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/fuel-types/6"
+    }
+  ],
+  "transmission_types": [
+    {
+      "id": 1,
+      "description": "Manual",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/transmission-types/1"
+    },
+    {
+      "id": 2,
+      "description": "Automática",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/transmission-types/2"
+    },
+    {
+      "id": 3,
+      "description": "Secuencial",
+      "created_at": "2021-03-31T14:57:14.000000Z",
+      "updated_at": "2021-03-31T14:57:14.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/transmission-types/3"
+    }
+  ],
+  "plate_type": {
+    "par": 0,
+    "impar": 1
+  },
+  "colors": [
+    {
+      "id": 1,
+      "description": "Amarillo",
+      "hex": "FFFF00",
+      "created_at": "2021-03-31T14:57:17.000000Z",
+      "updated_at": "2021-03-31T14:57:17.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/1"
+    },
+    {
+      "id": 2,
+      "description": "Azul",
+      "hex": "0000FF",
+      "created_at": "2021-03-31T14:57:18.000000Z",
+      "updated_at": "2021-03-31T14:57:18.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/2"
+    },
+    {
+      "id": 3,
+      "description": "Rojo",
+      "hex": "FF0000",
+      "created_at": "2021-03-31T14:57:18.000000Z",
+      "updated_at": "2021-03-31T14:57:18.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/3"
+    },
+    {
+      "id": 4,
+      "description": "Verde",
+      "hex": "008F39",
+      "created_at": "2021-03-31T14:57:18.000000Z",
+      "updated_at": "2021-03-31T14:57:18.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/4"
+    },
+    {
+      "id": 5,
+      "description": "Gris",
+      "hex": "9C9C9C",
+      "created_at": "2021-03-31T14:57:18.000000Z",
+      "updated_at": "2021-03-31T14:57:18.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/5"
+    },
+    {
+      "id": 6,
+      "description": "Naranja",
+      "hex": "FF8000",
+      "created_at": "2021-03-31T14:57:18.000000Z",
+      "updated_at": "2021-03-31T14:57:18.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/colors/6"
+    }
+  ],
+  "metas": [
+    {
+      "id": 1,
+      "description": "Sun roof",
+      "meta_group_id": 1,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/metas/1"
+    },
+    {
+      "id": 2,
+      "description": "Bluetooth",
+      "meta_group_id": 1,
+      "created_at": "2021-03-31T14:57:15.000000Z",
+      "updated_at": "2021-03-31T14:57:15.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/metas/2"
+    },
+    {
+      "id": 3,
+      "description": "Tapizado de cuero",
+      "meta_group_id": 1,
+      "created_at": "2021-03-31T14:57:16.000000Z",
+      "updated_at": "2021-03-31T14:57:16.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/metas/3"
+    },
+    {
+      "id": 4,
+      "description": "Alarmas",
+      "meta_group_id": 2,
+      "created_at": "2021-03-31T14:57:16.000000Z",
+      "updated_at": "2021-03-31T14:57:16.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/metas/4"
+    },
+    {
+      "id": 5,
+      "description": "Camara de reversa",
+      "meta_group_id": 2,
+      "created_at": "2021-03-31T14:57:16.000000Z",
+      "updated_at": "2021-03-31T14:57:16.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/metas/5"
+    },
+    {
+      "id": 6,
+      "description": "Sensores",
+      "meta_group_id": 2,
+      "created_at": "2021-03-31T14:57:16.000000Z",
+      "updated_at": "2021-03-31T14:57:16.000000Z",
+      "resource_url": "http://127.0.0.1:8000/admin/metas/6"
+    }
+  ],
+  "price_range": {
+    "min": "20,00",
+    "max": "80,00"
+  },
+  "vehicle_status": [
+    {
+      "value": 1,
+      "status": "Nuevo",
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    }
+  ],
+  "millage_range": {
+    "min": 0,
+    "max": 10000
+  },
+  "years": [
+    {
+      "year": 2020,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    },
+    {
+      "year": 2021,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    }
+  ],
+  "number_passengers": [
+    {
+      "passengers": 2,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    },
+    {
+      "passengers": 4,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    }
+  ],
+  "number_doors": [
+    {
+      "number_doors": 2,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    },
+    {
+      "number_doors": 4,
+      "resource_url": "http://127.0.0.1:8000/admin/vehicles"
+    }
+  ]
+}
